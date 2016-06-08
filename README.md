@@ -1,7 +1,7 @@
 # Site como Plugin para CakePHP
 
 [![Build Status](https://img.shields.io/travis/maiconpinto/cakephp-site-plugin/master.svg?style=flat-square)](https://travis-ci.org/maiconpinto/cakephp-site-plugin)
-[![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+[![License](https://img.shields.io/packagist/l/maiconpinto/cakephp-site-plugin.svg?style=flat-square)](https://packagist.org/packages/maiconpinto/cakephp-site-plugin)
 
 A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.x.
 
@@ -14,7 +14,7 @@ The framework source code can be found here: [cakephp/cakephp](https://github.co
 
 If Composer is installed globally, run
 ```bash
-composer create-project --prefer-dist cakephp/app [app_name]
+composer create-project --prefer-dist maiconpinto/cakephp-site-plugin [app_name]
 ```
 
 You should now be able to visit the path to where you installed the app and see
