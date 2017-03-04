@@ -5,6 +5,10 @@ $this->assign('title', 'CakePHP Site - Project');
 
 $this->assign('logo', 'CakePHP Site');
 
+$this->start('menu');
+ echo $this->element('menu');
+$this->end();
+
 $this->assign('section-banner-title', 'Site Project');
 $this->assign('section-banner-subtitle', 'My CakePHP Site Project');
 $this->assign('section-banner-button-link', 'http://maiconpinto.com.br/cakephp-site');
@@ -34,3 +38,10 @@ $this->assign('section-contact-content', 'Lorem ipsum dolor sit amet, consectetu
 $this->assign('section-banner-three-title', 'A modern responsive front-end framework based on Material Design');
 $this->assign('section-banner-three-background-url', 'background3.jpg');
 $this->assign('section-banner-three-background-alt', 'Unsplashed background img 3');
+
+$this->assign('footer-bio-title', 'Maicon Pinto');
+$this->assign('footer-bio-description', 'Meu nome é Maicon Silva Pinto, 28 anos, casado, pai de duas meninas. Desenvolvedor Web, trabalho com sites e sistemas para web. CakePHP.');
+$this->assign('footer-menu-one-title', '');
+$this->assign('footer-menu-one', '');
+$this->assign('footer-menu-two-title', '');
+$this->assign('footer-menu-two', '');
