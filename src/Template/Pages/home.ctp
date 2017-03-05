@@ -1,14 +1,6 @@
 <?php
 $this->extend('MaterializeCSS.Common/home');
 
-$this->assign('title', 'CakePHP Site - Project');
-
-$this->assign('logo', 'CakePHP Site');
-
-$this->start('menu');
- echo $this->element('menu');
-$this->end();
-
 $this->assign('section-banner-title', 'Site Project');
 $this->assign('section-banner-subtitle', 'My CakePHP Site Project');
 $this->assign('section-banner-button-link', 'http://maiconpinto.com.br/cakephp-site');
@@ -33,15 +25,19 @@ $this->assign('section-banner-two-background-url', 'background2.jpg');
 $this->assign('section-banner-two-background-alt', 'Unsplashed background img 2');
 
 $this->assign('section-contact-title', 'Contact us');
-$this->assign('section-contact-content', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;');
+
+$this->start('section-contact-content');
+    ?>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+    <br>
+    <p class="text-center">
+        <?php echo $this->Html->link('Contato', ['controller' => 'pages', 'action' => 'display', 'contato'], ['class' => 'btn btn-primary']); ?>
+    </p>
+
+    <?php
+$this->end();
 
 $this->assign('section-banner-three-title', 'A modern responsive front-end framework based on Material Design');
 $this->assign('section-banner-three-background-url', 'background3.jpg');
 $this->assign('section-banner-three-background-alt', 'Unsplashed background img 3');
 
-$this->assign('footer-bio-title', 'Maicon Pinto');
-$this->assign('footer-bio-description', 'Meu nome é Maicon Silva Pinto, 28 anos, casado, pai de duas meninas. Desenvolvedor Web, trabalho com sites e sistemas para web. CakePHP.');
-$this->assign('footer-menu-one-title', '');
-$this->assign('footer-menu-one', '');
-$this->assign('footer-menu-two-title', '');
-$this->assign('footer-menu-two', '');
